@@ -1,20 +1,15 @@
-
-if (window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches || screen.width <= 960) {
-    document.body.style=`
-    background-image:url('./images/android.jpg');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */`
+const videoBackground = document.getElementById('videoBackground');
+if(window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches || screen.width <= 960)
+{
+    body.style.backgroundImage=url('./images/android.jpg');
 }
 else{
     const video = document.createElement('video');
-    const media = document.getElementById('videoBackground');
-    media.appendChild(video);
-    video.src="/images/background.mp4";
-    video.autoplay=true;
+    video.src='/images/background.mp4';
     video.loop=true;
-    video.style=` width: 100%;
+    video.autoplay=true;
+    video.style=`width: 100%;
     height: 100vh;
-    object-fit: cover;`
-    
+    object-fit: cover;`;
+    videoBackground.appendChild(video);
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -155,4 +156,44 @@ p{
   text-transform: uppercase;
   font-size: 50px;
   font-family: "Lovers Quarrel", cursive;
+}
+/* modal */
+.modal-container{
+  width:600px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  background-image: url(./images/imageModel.gif);
+  background-size: cover;
+  background-position: center;
+  display: none;
+  opacity: 0.8;
+  z-index: 1000;
+}
+#btnClose{
+  padding:10px 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border:1px solid rgb(112, 62, 62);
+  top: calc(100% - 50px);
+  position: absolute;
+  left: calc(100% - 100px);
+  border-radius: 10px;
+}
+#btnClose:hover{
+  background-color: #fff;
+  opacity:0.3;
+}
+.modal-container>p{
+  font-size: 40px;
+  font-style: italic;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: rgb(247, 210, 210);
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
 }
