@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,9 @@
 body {
   width: 100%;
   height: 100vh;
+  /* background-image: url('./images/android.jpg');
+  background-size: cover;
+  background-position:center; */
 }
 .videoBackground {
   width: 100%;
@@ -114,7 +117,6 @@ body {
   position: absolute;
 }
 .btn {
-
   position: relative;
   padding: 20px 30px;
   font-size: 36px;
@@ -149,17 +151,17 @@ span {
     opacity: 0;
   }
 }
-p{
+p {
   position: absolute;
   padding: 10px auto;
   left: calc(50% - 258px);
   text-transform: uppercase;
   font-size: 50px;
-  font-family: "Lovers Quarrel", cursive;
+  font-family: "Dancing Script", cursive;
 }
 /* modal */
-.modal-container{
-  width:600px;
+.modal-container {
+  width: 600px;
   height: 300px;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -172,21 +174,21 @@ p{
   opacity: 0.8;
   z-index: 1000;
 }
-#btnClose{
-  padding:10px 20px;
+#btnClose {
+  padding: 10px 20px;
   font-size: 20px;
   background-color: transparent;
-  border:1px solid rgb(112, 62, 62);
+  border: 1px solid rgb(112, 62, 62);
   top: calc(100% - 50px);
   position: absolute;
   left: calc(100% - 100px);
   border-radius: 10px;
 }
-#btnClose:hover{
+#btnClose:hover {
   background-color: #fff;
-  opacity:0.3;
+  opacity: 0.3;
 }
-.modal-container>p{
+.modal-container > p {
   font-size: 40px;
   font-style: italic;
   top: 50%;
@@ -194,6 +196,21 @@ p{
   transform: translate(-50%, -50%);
   position: absolute;
   color: rgb(247, 210, 210);
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   letter-spacing: 2px;
+}
+@media (max-width: 768px) {
+  .modal-container {
+    width: 300px;
+    height: 200px;
+  }
+  .modal-container > p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  #btnClose {
+    padding: 7.5px 15px;
+    font-size: 15px;
+  }
 }

@@ -1,7 +1,12 @@
 const videoBackground = document.getElementById('videoBackground');
+const body = document.body;
 if(window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches || screen.width <= 960)
 {
-    body.style.backgroundImage=url('./images/android.jpg');
+    body.style=` width: 100%;
+    height: 100vh;
+    background-image: url('./images/android.jpg');
+    background-size: cover;
+    background-position:center;`;
 }
 else{
     const video = document.createElement('video');
