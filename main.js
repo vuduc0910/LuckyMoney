@@ -80,4 +80,5 @@ btnClose.addEventListener("click", () => {
   children = modal.children;
   children[1].remove();
   modal.style.setProperty("display", "none");
+  rotation.style.setProperty("animation-duration", `5000ms`);
 });
